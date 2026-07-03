@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>🙂 You Can't Say NO 🙃</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1a1a1a;
+    text-align: center;
+
+    background: linear-gradient(135deg, #dfffe0, #bff3d0, #e8fff3);
+    background-size: 300% 300%;
+    animation: softFlow 12s ease infinite;
+}
+
+@keyframes softFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+}
+
+img {
+    width: 180px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.accept {
+    background: #1a1a1a;
+    color: white;
+}
+
+.accept:hover {
+    background: #d4af37;
+    color: black;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🙂 You Can't Say NO 🙃</h1>
+
+    <div class="card">
+        <p><b>You know I had to be Dramatic😏</b></p>
+        <p>You have officially been selected to attend a very important event.</p>
+    </div>
+
+    <div class="card">
+        <h2>Evening Out🌺</h2>
+        <p><b>Date:</b> 04/07/2026</p>
+        <p><b>Time:</b>3:00pm-11:00pm</p>
+        <p><b>Location:</b>Even I don't know😂</p>
+    </div>
+
+    <div class="card">
+        <h2>Reasons why you’re invited</h2>
+        <p>Me ofcourse...🙄</p>
+    <img src="photo1.jpg" alt="me 1">
+    <img src="photo2.jpg" alt="me 2">
+    <img src="photo3.jpg" alt="me 3">
+    </div>
+
+    <div class="card">
+        <h2>💌 Secret Message</h2>
+
+        <button onclick="document.getElementById('letter').style.display='block'">
+            Open Invitation Letter
+        </button>
+
+        <div id="letter" style="display:none; margin-top:15px;">
+            <p>
+                I don’t want you to just hear lots of birthday wishes.<br><br>
+
+                I want you to celebrate it.<br><br>
+
+                So this is your official invitation. Also please omba gari, we'll be going to different places<br><br>
+
+                You are expected. You are wanted. And you better show up 😉
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <button class="accept" onclick="alert('Invitation accepted. No backing out now 😏')">
+            I’ll Be There
+        </button>
+    </div>
+
+</div>
+
+</body>
+</html>
