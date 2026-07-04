@@ -42,9 +42,21 @@ h1 {
 }
 
 img {
-    width: 180px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
     border-radius: 15px;
-    margin: 10px;
+    margin:15px;
+    border: 2px solid rgba(212, 175, 55, 0.6);
+    box-shadow:0 8px 18px
+    rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 12px 25px 
+    rgba(0,0,0,0.2);
 }
 
 button {
@@ -91,10 +103,12 @@ button {
     <div class="card">
         <h2>Reasons why you’re invited</h2>
         <p>Me ofcourse...🙄</p>
-    <img src="photo1.jpg" alt="me 1">
-    <img src="photo2.jpg" alt="me 2">
-    <img src="photo3.jpg" alt="me 3">
+       <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
+        <img src="photo1.jpg" alt="me 1">
+        <img src="photo2.jpg" alt="me 2">
+        <img src="photo3.jpg" alt="me 3">
     </div>
+</div>
 
     <div class="card">
         <h2>💌 Secret Message</h2>
